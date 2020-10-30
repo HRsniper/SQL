@@ -1,0 +1,14 @@
+{
+    "name": "CursoDeSQL",
+    "version": "1.0.0",
+    "author": "Hércules R.",
+    "license": "MIT",
+    "dependencies": {
+        "knex": "^0.21.5",
+        "sqlite3": "^5.0.0"
+    },
+    "scripts": {
+        "latest": "knex migrate:latest",
+        "rollback": "knex migrate:rollback"
+    }
+}

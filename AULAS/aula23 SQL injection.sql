@@ -1,0 +1,4 @@
+-- Injeção SQL
+-- A injeção de SQL é uma técnica de injeção de código que pode destruir seu banco de dados.
+-- A injeção de SQL é uma das técnicas mais comuns de hacking na web.
+-- A injeção de SQL é a colocação de código malicioso em instruções SQL, por meio de entrada de página da web.
