@@ -83,3 +83,5 @@ SELECT Date();
 SELECT Time();
 SELECT DateTime();
 SELECT JulianDay();
+
+SELECT strftime('%Y-%m-%dT%H:%M:%fZ', 'now');
